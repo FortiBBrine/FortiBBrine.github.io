@@ -27,9 +27,10 @@
     		<div class="col-md-10 col-sm-10 col-xs-10 col-lg-10" style="background-color: #99CCFF; height: 760px">
     		    <form action="" method="post" name="test" id = "form">
     				<h1>Войдите в аккаунт</h1>
-        			<br/><input type = "text" style = "font-size: 175%" name = "name" id = "name" placeholder="Логин"/>
+
+        			<br/><label for = "name">Логин: </label><input type = "text" style = "font-size: 175%" name = "name" id = "name" placeholder="Логин"/>
         			<br/>
-        			<br/><input type = "password" style = "font-size: 175%" name = "password" placeholder="Пароль"/>
+        			<br/><label for = "password">Пароль: </label><input type = "password" style = "font-size: 175%" name = "password" placeholder="Пароль"/>
         			<br/><input title = "Войдите в аккаунт" type="button" class = "butt butt1" onclick = "valid(document.getElementById('form')) "name = "submit" value = "Войти"/>
     			</form>
     		</div>
