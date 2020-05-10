@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>n9538</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function punch(form) {
+            var string = form.texs.value;
+            var array = string.split(" ");
+            var a, b, choc;
+            a = parseInt(array[0]);
+            b = parseInt(array[1]);
+            choc = a * b;
+            if (choc%2 == 0) {
+                alert(0);
+            }
+            else {
+                alert(1);
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src = "qest.jpg" width = "1400px"/>
+    <form action="" method="post" name="test" id = "form">
+        <input type="text" name="texs" placeholder="a b" style="width: 100px; font-size: 175%" title="Введите числа">
+        <br/><input title = "Выполнить" type="button" class = "butt butt1" onclick = "punch(document.getElementById('form')) "name = "submit" value = "Выполнить"/>
+    </form>
+</body>
+</html>>
