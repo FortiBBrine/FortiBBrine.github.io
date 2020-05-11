@@ -20,3 +20,26 @@
   background-color: #4CAF50;
   color: white;
 }
+.labels {
+	font-size: 250%;
+	font: Comic Sans MS;
+	width: 175px;
+	color: black;
+}
+.entry {
+	margin: 30px;
+	border: 3px solid red;
+	font-size: 175%;
+	font-family: Comic Sans Ms;
+	width: 175px;
+}
+.textentry {
+	max-width: 400px; 
+	max-height: 100px;
+	min-width: 400px;
+	min-height: 100px;
+	margin: 30px;
+	border: 3px solid red;
+	font-family: Comic Sans Ms;
+	font-size: 135%;
+}

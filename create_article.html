@@ -2,9 +2,9 @@
 <html xmlns="https://fortibbrine.github.io/">
 <head>
 	<meta charset="utf-8">
-	<title>BrawlWorld</title>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Создание новости</title>
+    <script type="text/javascript" src="code.js"></script>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" type="text/css" href="style.css">
   	<!-- Latest compiled and minified CSS -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -23,10 +23,10 @@
 			</div>
 			<div>
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Главная</a></li>
+					<li><a href="https://fortibbrine.github.io/articles.html">Главная</a></li>
 					<li><a href="#">О нас</a></li>
 					<li><a href="#">Обратная связь</a></li>
-					<li><a href="https://fortibbrine.github.io/create_article.html">Создание статьи</a></li>
+          <li class = "active"><a href="https://fortibbrine.github.io/create_article.html">Создание статьи</a></li>
 				</ul>
 			</div>
 		</div>
@@ -39,9 +39,15 @@
     			<p style="font-family: Comic Sans Ms; color: white; font-size: 200%">World</p>
     		</div>
     		<div class="col-md-10 col-sm-10 col-xs-10 col-lg-10" style="background-color: #99CCFF; height: 760px">
-    			<h1 style="font: Comic sans MS"><center>Мы создали сайт</center></h1>
-    			<center><img src = "site.png" width = 350px/></center>
-    			<center><h2>Дата: 09.05.2020</h2></center>
+          <form action="" method="post" name="test" id = "form">
+            <label for="header" class = "labels">Заголовок:</label>
+            <input type="text" name="header" id="header" class="entry"/>
+            </br>
+            <label for="textarea" style=" font-size: 250%; font: Comic Sans MS; width: 125px; color: black;">Текст статьи: </label>
+            <textarea name="textarea" id="textarea" class="textentry"></textarea>
+            <br/>
+            <button class="butt butt1">Создать</button>
+          </form>
     		</div>
     		<div class="col-md-1 col-sm-1 col-xs-1 col-lg-1" style="background-color: #00CC99; height: 760px"></div>
     	</div>
