@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>n8906</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		function f(button) {
+			var entry = document.getElementById('entry').value;
+			var n = parseInt(entry)-1;
+			var res = parseInt(n/11)*11;
+			alert(res);
+		}
+	</script>
+</head>
+<body>
+	<img src="n8906.jpg" width="1400px">
+	<input placeholder="Число" type="text" class="form-control" id="entry" style="width: 200px">
+	<button class="butt butt1" onclick="f(this)">Решить</button>
+</body>
+</html>
