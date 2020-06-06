@@ -22,37 +22,6 @@
             </div>
             <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8" style="background-color: red">
                 <h1 class="comics" style="color: white">Документация по плагину Skript</h1>
-                <h7 class="comics" style="color: white">Skript - это плагин для Bukkit, популярного серверного мода Minecraft. Это позволяет администраторам сервера легко модифицировать работу Minecraft, ничего не программируя. Это достигается с помощью триггеров, каждый из которых представляет собой набор условий и эффектов. Каждый раз, когда вызывается триггер, все условия проверяются, и, если все выполняются, эффекты выполняются. Основная идея Skript - это настраиваемость:</h7>
-                <h7 class="comics" style="color: white">Каждый может сделать свой сервер уникальным даже без пользовательских плагинов</h7>
-                <h7 class="comics" style="color: white">Гораздо быстрее изменить некоторые сценарии самостоятельно, чем попросить разработчиков плагинов написать некоторые функции, которые вы хотите</h7>
-                <h7 class="comics" style="color: white">Также нет необходимости иметь десятки маленьких плагинов, если вы можете сделать то же самое с этим одним плагином</h7>
-                <h7 class="comics" style="color: white">Вы можете скачать последнюю стабильную версию Skript здесь (см. Страницу BukkitDev для журналов изменений и дополнительной информации).</h7>
-                <h7 class="comics" style="color: white"></h7>
-                <h7 class="comics" style="color: white">Как уже упоминалось, Skript работает с триггерами, которые добавляют функциональность этому плагину. Триггеры могут быть очень простыми и состоять только из некоторых условий и эффектов, таких как это простое исправление:</h7>
-                <pre class="code-text" style="color: black; background-color: blue">
-on break of glass:
-    drop glass
-</pre>
-                <h7 class="comics" style="color: white">Скрипт также можно использовать для создания пользовательских команд. По сути, это триггеры, которые выполняются после ввода определенной команды.</h7>
-                <h7 class="comics" style="color: white">Далее определяется простая команда, которая позволяет получить идентификатор элемента, держа его в руке и введя / id:</h7>
-                <pre class="code-text" style="color: black; background-color: blue">
-command /id:
-    description: Find the ID of the item you're holding
-    trigger:
-        message "You're holding a %type of tool% whose ID is %id of tool%."</pre>
-                <h7 class="comics" style="color: white">Скрипт также поставляется с опцией непосредственного выполнения эффектов из чата, интерпретируя сообщения чата, которые начинаются с настраиваемого символа ('!') По умолчанию, как эффекты. Это по существу позволяет использовать эффекты в качестве «команд», например ! ремонт инструмента сделает то, что он подразумевает. Поскольку эти команды являются очень мощными (и, таким образом, их можно злоупотреблять), только игроки с разрешениями skript.effect могут использовать их, если они вообще включены (это не по умолчанию для OP!).</h7>
-                <h7 class="comics" style="color: white"></h7>
-                <h7 class="comics" style="color: white">Синтаксис скрипта не ограничивается такими простыми примерами, как выше, но имеет несколько других функций, таких как циклы, условные выражения и т. Д. Ниже приведен пример более продвинутого триггера, который заправляет печи, используя топливо из окружающих сундуков:</h7>
-                <pre class="code-text" style="color: black; background-color: blue">
-on burn of fuel:
-    fuel slot of the block is empty
-    loop blocks in radius 1:
-        loop-block is chest
-        loop items of type fuel:
-            loop-block contains loop-item
-            remove loop-item from loop-block
-            set fuel of the event-block to loop-item
-            stop trigger</pre>
                 <a class="butt butt1" href="https://fortibbrine.github.io" style="font-size: 100%; width: 50px; height: 50px;">
                     <span class="download-project">
                         1
@@ -64,12 +33,6 @@ on burn of fuel:
                     </span>
                 </a>
                 <hr color="white">
-                <br/>
-                <a class="butt butt1" href="https://media.forgecdn.net/files/779/542/Skript.jar">
-                    <span class="download-project">
-                        Скачать
-                    </span>
-                </a>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-2 col-lg-2" style="background-color: lime; min-height: 100vh">
                 
