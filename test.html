@@ -2,34 +2,15 @@
 <html style="min-height: 100vh">
 <head>
     <meta charset="utf-8">
-    <title>Стрелялки</title>
+    <title>Генератор кнопок</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
-        var x = 0, 
-            y = 0;
-        document.onkeypress = function py(evant) {
-            var key = evant.key;
-            var player = document.getElementById('player');
-            console.log(evant);
-            if (key == "d" || key == "Right") {
-                x += 10;
-                player.style = "margin: 0px; position: absolute; top: "+y+"px; left: "+x+"px;";
-            }
-            if (key == "a" || key == "Left") {
-                x -= 10;
-                player.style = "margin: 0px; position: absolute; top: "+y+"px; left: "+x+"px;";
-            }
-            if (x >= 300) {
-                x -= 20;
-                player.style = "margin: 0px; position: absolute; top: "+y+"px; left: "+x+"px;";
-            }
-            if (x <= -30) {
-                x += 20;
-                player.style = "margin: 0px; position: absolute; top: "+y+"px; left: "+x+"px;";
-            }
+        function need(form) {
+            alert(form.value);
         }
     </script>
 </head>
@@ -37,16 +18,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2 col-sm-2 col-xs-2 col-lg-2" style="background-color: lime; min-height: 100vh">
-                
+                <img src="logo.png" width="200px" height="200px">
+                <h3 class="comics">FortiBrine</h3>
             </div>
             <div class="col-md-8 col-sm-8 col-xs-8 col-lg-8" style="background-color: red">
-                <h1 class="comics" style="color: white">Наша стрелялка</h1>
-                <div class="container" style="border: 3px solid white; height: 400px; width: 400px; position: absolute; background-color: lime">
-                    <img src="mario.png" id="player" width = "60" height= "100" style="margin: 0px; position: absolute; top: 0px; left: 0px;">
-                    <img src="mixer.png" style="margin: 0px; position: absolute; top: 100px; left: 100px;" width = "110px" height="110px" />
-                </div>
-                <h1 class="comics" style="color: white; margin: 0px; position: absolute; top: 500px; left: 0px;">Счётчик попаданий: 0</h1>
-                <img src="pull.png" style="border-color: white; margin: 0px; position: absolute; top: 800px; left: 0px"/>
+                <input type="color" id="date" style="width: 125px; height: 125px"><br><br>
+                <button class="butt butt1" onclick="need(document.getElementById('date'))">Определить</button>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-2 col-lg-2" style="background-color: lime; min-height: 100vh">
                 
