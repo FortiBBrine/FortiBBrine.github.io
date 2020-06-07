@@ -13,8 +13,8 @@
             name = document.getElementById('name').value;
             href = document.getElementById('href').value;
             resultl = document.getElementById('result');
+            but = document.getElementById('rl');
             var res = "<a href=\"" + href + "\">" + "<button>" + name + "</button></a>" 
-            resultl.value = res;
         }
     </script>
 </head>
@@ -30,6 +30,7 @@
                 <input type="text" id="name" class="genb" placeholder="Название"><br><br>
                 <input type="text" id="href" class="genb" placeholder="Ссылка"><br><br>
                 <button onclick="need(this)" class="butt butt1">Сгенерировать</button><br><br>
+                <h3 class="comics" style="color: white">Результат: </h3>
                 <input type="text" name="result" id="result" class="genb" placeholder="Результат">
             </div>
             <div class="col-md-2 col-sm-2 col-xs-2 col-lg-2" style="background-color: lime; min-height: 100vh">
