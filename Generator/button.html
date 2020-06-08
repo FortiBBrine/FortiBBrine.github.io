@@ -18,6 +18,25 @@
             resultl.value = res;
         }
     </script>
+    <script type="text/javascript">
+        function comment(form) {
+            email = document.getElementById('email');
+            text = document.getElementById('text');
+            nick = document.getElementById('nickname');
+            if email.value == "" || email.value == " " {
+                alert("Введите email");
+            }
+            else if (text.value == "") {
+                alert("Введите текст комментария");
+            }
+            else if (nick.value == "") {
+                alert("Ник пустой");
+            }
+            else {
+                alert("Запрос на комментарий отправлен на вашу почту");
+            }
+        }
+    </script>
 </head>
 <body style="min-height: 100vh">
     <div class="container-fluid">
@@ -33,6 +52,22 @@
                 <button onclick="need(this)" class="butt butt1">Сгенерировать</button><br><br>
                 <h3 class="comics" style="color: white">Результат: </h3>
                 <input type="text" name="result" id="result" class="genb" placeholder="Результат">
+
+                <hr style="background-color: white; color: white">
+                <h4 class="comics" style="color: white">Комментарии: </h4>
+                <div style="background-color: blue">
+                <h4 class="comics" style="color: white">Ник: Denzobar</h4>
+                <h4 class="comics" style="color: white">Текст: Норм</h4> 
+                </div>
+                <label class="comics" style="font-size: 150%; color: white">Имя:</label>
+                <br>
+                <input id="nickname" type = "text" class="genb" placeholder=""><br><br>
+                <label class="comics" style="font-size: 150%; color: white">Email:</label>
+                <br>
+                <input id="email" type = "text" class="genb" placeholder=""><br><br>
+                <label class="comics" style="font-size: 150%; color: white">Текст: </label><br>
+                <textarea id="text" class="genb" style="max-height: 200px; min-height: 200px"></textarea><br>
+                <button onclick="comment(this)" class="butt butt1">Отправить</button>
             </div>
             <div class="col-md-2 col-sm-2 col-xs-2 col-lg-2" style="background-color: lime; min-height: 100vh">
                 
